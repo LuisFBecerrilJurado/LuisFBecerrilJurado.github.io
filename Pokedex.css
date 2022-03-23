@@ -21,7 +21,7 @@ form {
 
 .DataPokemon {
     width: 450px;
-    height: 690px;
+    height: auto;
     text-align: center;
     padding: 5px;
     background-color: rgb(250, 3, 3);
