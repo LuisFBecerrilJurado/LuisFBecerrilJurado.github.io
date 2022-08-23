@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel= "shortcut icon" href="img/Logo.png" type= "image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="zona-titulo"><img src="img/Logo-2.png" alt="Logo de Alura" class="img-principal"></a><p class="texto-titulo"> CHALLENGE ENCRIPTADOR </p>
+    </header>
+    <main class="encriptador">
+        <section class="texto-ingresado">
+            <textarea class="texto-a-transformar" name="texto" cols="30" rows="10" placeholder="  Ingresa el texto a convertir" id="textArea"></textarea>
+            <div class="botones">
+                <p class="texto-informativo">* Sólo letras minúsculas y sin acentos.</p>
+                <button class="Encriptar" id="botonEncriptar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span> Encriptar
+                </button>
+                <button class="Desencriptar" id="botonDesencriptar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span> Desencriptar
+                </button>
+            </div>
+        </section>
+        <section class="resultado" id="resultado">
+            <div>
+                <img src="img/Muñeco.png" alt="placeholder" id="areaMuneco" class="muneco">
+            </div>
+            <p class="texto-titulo-area-resultado" id="textoTituloAreaResultado">Ningún mensaje fue encontrado</p>
+            <p class="texto-descripcion-area-resultado" id="textoAreaResultado"> Ingresa el texto que deseas encriptar o desencriptar. </p>
+            <button class="copiar-texto" id="CopiarTexto">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> Copiar
+            </button>
+        </section>
+    </main>
+    <footer>
+        <div class="copyrigth">
+            <p class="texto-footer">Elaborado por: Luis Francisco Becerril Jurado</p>
+            <p class="texto-footer">Oracle Next Education 2022 </p>
+        </div>
+    </footer>
+    <script src="JS/script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
