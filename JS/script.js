@@ -93,7 +93,7 @@ function desencriptar(){
         textoAreaResultado.innerText                                        = newText;         //Inserta el texto encriptado
         }
     }else{
-        swal("No hay texto a procesar", "", "error");
+        swal("No hay texto a procesar ", "", "error");
     }
 }
 
@@ -108,7 +108,7 @@ function copiarTexto(){
         swal("Texto copiado", "", "success");
         textoencaja = false;
     }else{
-        swal("No ha ingresado un texto", "", "warning");
+        swal("No ha ingresado un texto", " o No ha seleccionado una opcion", "warning");
     }
 }
 
