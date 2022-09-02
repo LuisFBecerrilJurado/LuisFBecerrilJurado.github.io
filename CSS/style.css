@@ -1,7 +1,7 @@
 body{
     background-image: linear-gradient( 135deg, #90F7EC 10%, #1662a1 100%);
     font-size: 18px;
-    width: 100%;
+    width: auto;
     font-family: 'Inter', sans-serif;
 }
 
@@ -20,9 +20,6 @@ header p{
     color: blue;
     vertical-align: top;
     text-align: center;
-    position: absolute;
-    top:0px;
-    left: 300px;
     padding-bottom: 20px;
 }
 
@@ -211,11 +208,74 @@ span:nth-child(2) {
 }
 
 footer{
-    position: absolute;
-    left:450px;
-    margin-top: 15px;
+    margin-top: 2rem;
     color: black;
     font-weight: bold;
     font-size: 14px;
     text-align: center;
+}
+
+.enlaces img{
+    width: 50px;
+}
+
+.enlaces img:hover{
+    background-color: #1f8a3c7d;
+    border-radius: 50%;
+}
+
+@media (max-width:768px){
+    body{
+        background-image: linear-gradient( 135deg, #90F7EC 10%, #1662a1 100%);
+        font-size: 18px;
+        width: 80%;
+        font-family: 'Inter', sans-serif;
+    }
+
+    header p{
+        position: relative;
+        left: 40px;
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .texto-ingresado{
+        width: 80%;
+        margin: 1em 0 0 24%;
+    }
+
+    .Encriptar {
+        margin: 0 20px 10px 20%;
+    }
+
+    .texto-a-transformar {
+        width: 100%;
+        height: 350px;
+        margin: 0;
+        border: none;
+        border-radius: 10px;
+        font-size: 24px;
+        text-align: center;
+        appearance: none;
+    }
+
+    .resultado{
+        width: 80%;
+        margin: 1em 0 0 24%;
+    }
+
+    .copyrigth{
+        position: relative;
+        left: 39px;
+    }
+    .enlaces{
+        position: relative;
+        left: 44px;
+        align-content: space-between;
+    }
 }
