@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <!-- Cargando la hoja de estilos de css -->
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <title>Mi primer página web</title>
+</head>
+<body>
+    <container class="flex-column">
+        <label for="PBasica">Pizza básica</label>
+        <input type="number" id="PBasica" placeholder="0"  min="0">
+        <label for="P2Ingredientes">Pizza 2 ingredientes</label>
+        <input type="number" id="P2Ingredientes"placeholder="0"  min="0">
+        <label for="P3Ingredientes">Pizza 3 ingredientes</label>
+        <input type="number" id="P3Ingredientes"placeholder="0" min="0">
+        <label for="RefChico">Refresco chico</label>
+        <input type="number" id="RefChico" placeholder="0" min="0">
+        <label for="RefGrande">Refresco grande</label>
+        <input type="number" id="RefGrande" placeholder="0" min="0">
+    </container>
+    <container class="grid-cols-2">
+        <div class="flex-center flex-ai-center">
+            <button id="Calcular" onclick="Calcular()">Calcular</button>
+        </div>
+        <div class="flex-center flex-direction-column">
+            <label>PRECIO</label>
+            <p id="Total">0</p>
+        </div>
+    </container>
+    <!-- Cargando código JavaScript como tipo módulo -->
+    <script src="./js/testpizzeria.js"></script>
+</body>
+</html>
